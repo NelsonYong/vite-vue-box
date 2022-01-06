@@ -1,10 +1,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import routes from './router.config';
 
 // app router
 export const router = createRouter({
   history: createWebHashHistory(),
-  routes,
-  strict: true,
-  scrollBehavior: () => ({ left: 0, top: 0 }),
+  routes: [
+    {
+      path: '/app',
+      name: 'app',
+      component: () => import('/@/views/Init/index.vue'),
+    },
+  ],
 });

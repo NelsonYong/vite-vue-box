@@ -8,8 +8,8 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import { router } from './router';
 import { store } from './store';
-import { setupGlobDirectives } from './directives';
-import './router/permission';
+// import { setupGlobDirectives } from './directives';
+// import './router/permission';
 
 const app = createApp(App);
 
@@ -18,7 +18,7 @@ app.use(store);
 app.use(router);
 
 // Register global directive
-setupGlobDirectives(app);
+// setupGlobDirectives(app);
 
 // 全局属性
 // app.config.globalProperties.AuthEnum = AuthEnum;
