@@ -13,10 +13,10 @@
     "ant-design-vue",
     "template"
   ],
-  "homepage": "https://github.com/js-banana/vite-vue3-ts",
+  "homepage": "https://github.com/NelsonYong/vite-vue-ts-template",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/js-banana/vite-vue3-ts.git"
+    "url": "git+https://github.com/NelsonYong/vite-vue-ts-template.git"
   },
   "engines": {
     "node": "^12 || >=14"
