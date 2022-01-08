@@ -1,0 +1,1 @@
+import{f as c,x as n}from"./antdv.4a36e21f.js";var s=(e,r)=>{const t=e.__vccOpts||e;for(const[o,a]of r)t[o]=a;return t};const _={},f={style:{"background-color":"aquamarine"}};function d(e,r){return c(),n("div",f,"\u521D\u59CB\u5316")}var l=s(_,[["render",d]]);export{l as default};
