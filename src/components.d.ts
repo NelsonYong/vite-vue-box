@@ -4,8 +4,8 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Upload: typeof import('./components/Upload/index.vue')['default']
+    Upload: typeof import('./components/Upload/index.vue')['default'];
   }
 }
 
-export { }
+export {};
