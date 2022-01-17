@@ -1,5 +1,5 @@
 <template>
-  <img src="../../assets/logo.png" alt="" />
+  <img src="https://vuejs.org/images/logo.png" alt="vue logo" />
   <div class="header">{{ title ?? '-' }}</div>
   <!-- <div class="header" v-boolean="boolean">test</div> -->
 </template>
