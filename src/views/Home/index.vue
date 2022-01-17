@@ -5,9 +5,14 @@
 </template>
 
 <script lang="ts" setup>
+  // import { useAsyncRequest } from 'vue3-bring-hooks';
   import Hearder from './Hearder.vue';
+  // import { getName } from './services';
 
   const title = ref(`Vite+Vue3+TypeScript | ${import.meta.env.VITE_APP_ENV}`);
+
+  // 请求实例
+  // const { data } = useAsyncRequest(() => getName(123));
 </script>
 
 <style scoped lang="less">
