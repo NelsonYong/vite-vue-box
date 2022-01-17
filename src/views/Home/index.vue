@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-  // import { useAsyncRequest } from 'vue3-bring-hooks';
+  // import { useAsyncRequest } from 'vue3-hooks-plus';
   import Hearder from './Hearder.vue';
   // import { getName } from './services';
 

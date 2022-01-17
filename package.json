@@ -29,7 +29,7 @@
     "vite-plugin-style-import": "^1.4.0",
     "vue": "^3.2.16",
     "vue-router": "4",
-    "vue3-bring-hooks": "^1.0.8",
+    "vue3-hooks-plus": "^1.0.9",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
