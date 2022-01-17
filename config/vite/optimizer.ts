@@ -5,12 +5,8 @@
 
 const vendorLibs: { match: string[]; output: string }[] = [
   {
-    match: ['ant-design-vue'],
-    output: 'antdv',
-  },
-  {
-    match: ['echarts'],
-    output: 'echarts',
+    match: ['vant'],
+    output: 'vant',
   },
 ];
 

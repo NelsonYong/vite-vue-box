@@ -4,7 +4,8 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Upload: typeof import('./components/Upload/index.vue')['default'];
+    Card: typeof import('./components/common/Card.vue')['default'];
+    WaterMark: typeof import('./components/common/WaterMark.vue')['default'];
   }
 }
 

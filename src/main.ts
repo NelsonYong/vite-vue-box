@@ -1,26 +1,15 @@
-// import 'ant-design-vue/dist/antd.css';
-import 'sanitize.css';
-// import 'sanitize.css/forms.css';
-// import 'sanitize.css/typography.css';
-import '/@/styles/index.less';
-
 import { createApp } from 'vue';
 import App from './App.vue';
-import { router } from './router';
-import { store } from './store';
-// import { setupGlobDirectives } from './directives';
-// import './router/permission';
+import { routers } from './routers';
+// import Vant from 'vant';
+// import 'vant/lib/index.css';
+import store from './store';
 
 const app = createApp(App);
 
+app.use(routers);
 app.use(store);
+// app.use(Vant);
 
-app.use(router);
-
-// Register global directive
-// setupGlobDirectives(app);
-
-// 全局属性
-// app.config.globalProperties.AuthEnum = AuthEnum;
-
+// 挂载应用
 app.mount('#app');
