@@ -13,7 +13,7 @@
     "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
     "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
     "prepare": "husky install",
-    "preinstall": "chmod 700 .husky/pre-commit"
+    "preinstall": "chmod +x .husky/pre-commit"
   },
   "dependencies": {
     "@types/watermark-dom": "^2.3.1",
