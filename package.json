@@ -12,8 +12,7 @@
     "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
     "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
     "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
-    "prepare": "husky install",
-    "preinstall": "chmod +x .husky/pre-commit"
+    "prepare": "husky install && chmod +x .husky/pre-commit"
   },
   "dependencies": {
     "@types/watermark-dom": "^2.3.1",
@@ -27,9 +26,9 @@
     "unplugin-auto-import": "^0.5.3",
     "vite-plugin-compression": "^0.4.0",
     "vite-plugin-style-import": "^1.4.0",
-    "vue": "^3.2.16",
+    "vue": "^3.2.26",
     "vue-router": "4",
-    "vue3-hooks-plus": "^1.0.9",
+    "vue3-hooks-plus": "^2.0.0",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
