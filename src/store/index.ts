@@ -1,12 +1,7 @@
-import { createStore } from 'vuex';
-import { createState, State } from './state';
-import mutations from './mutation';
+import { createPinia } from 'pinia';
 
-const state = createState();
+const store = createPinia();
 
-const store = createStore<State>({
-  state,
-  mutations,
-});
+export { store };
 
 export default store;
