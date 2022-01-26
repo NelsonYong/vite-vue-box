@@ -8,8 +8,6 @@
   defineProps<{
     title?: string;
   }>();
-
-  // const boolean = ref(true);
 </script>
 
 <style scoped lang="less">
