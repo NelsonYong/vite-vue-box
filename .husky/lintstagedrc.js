@@ -4,4 +4,7 @@ module.exports = {
   'package.json': ['prettier --write'],
   '*.vue': ['eslint --fix', 'prettier --write'],
   '*.{scss,less,styl,html}': ['prettier --write'],
+  '*.{{html,vue,css,sass,scss,less}}': [
+    'stylelint --cache --fix "**/*.{vue,less,postcss,css}" --cache --cache-location node_modules/.cache/stylelint/ postcss-html',
+  ],
 };

@@ -17,6 +17,7 @@
     width: 300px;
     height: 300px;
   }
+
   .header {
     font-size: 64px;
     font-weight: 600;

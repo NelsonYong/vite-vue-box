@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*css 初始化 */
+
+/* css 初始化 */
 html,
 body,
 ul,
@@ -27,7 +28,7 @@ fieldset,
 img,
 input,
 button {
-  /*fieldset组合表单中的相关元素*/
+  /* fieldset组合表单中的相关元素 */
   border: none;
   padding: 0;
   margin: 0;
@@ -36,13 +37,13 @@ button {
 
 ul,
 ol {
-  list-style: none; /*清除列表风格*/
+  list-style: none; /* 清除列表风格 */
 }
 
 input {
   padding-top: 0;
   padding-bottom: 0;
-  font-family: 'SimSun', '宋体';
+  font-family: '宋体';
 }
 
 select,
@@ -61,35 +62,35 @@ textarea {
   resize: none;
 }
 
-/*防止多行文本框拖动*/
+/* 防止多行文本框拖动 */
 img {
   border: 0;
   vertical-align: middle;
 }
 
-/*  去掉图片低测默认的3像素空白缝隙*/
+/*  去掉图片低测默认的3像素空白缝隙 */
 table {
-  border-collapse: collapse; /*合并外边线*/
+  border-collapse: collapse; /* 合并外边线 */
 }
 
 body {
-  font: 12px/150% Arial, Verdana, '\5b8b\4f53'; /*宋体，Unicode，统一码*/
+  font: 12px/150% Arial, Verdana, '\5b8b\4f53'; /* 宋体，Unicode，统一码 */
   color: #666;
   background: #fff;
 }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix::before,
+.clearfix::after {
   content: '';
   display: table;
 }
 
-.clearfix:after {
+.clearfix::after {
   clear: both;
 }
 
 .clearfix {
-  *zoom: 1; /*IE/7/6*/
+  *zoom: 1; /* IE/7/6 */
 }
 
 a {

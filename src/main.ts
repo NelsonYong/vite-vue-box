@@ -4,7 +4,7 @@ import { setupGlobDirectives } from './directives';
 import { routers } from './routers';
 import store from './store';
 
-import './styles/tailwindcss.less';
+import './styles/tailwindcss.css';
 
 const app = createApp(App);
 

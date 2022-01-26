@@ -36,9 +36,11 @@
   .card-content {
     width: 100%;
   }
+
   .card-title {
     padding: 16px;
   }
+
   .card-body {
     padding: 24px;
     background-color: #fff;
