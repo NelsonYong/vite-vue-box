@@ -49,7 +49,7 @@ specifiers:
   vue-global-api: ^0.4.1
   vue-router: '4'
   vue-tsc: ^0.3.0
-  vue3-hooks-plus: ^2.1.1
+  vue3-hooks-plus: ^2.1.3
   vuex: ^4.0.2
 
 dependencies:
@@ -67,7 +67,7 @@ dependencies:
   vite-plugin-style-import: 1.4.1_vite@2.7.13
   vue: 3.2.29
   vue-router: 4.0.12_vue@3.2.29
-  vue3-hooks-plus: 2.1.1_vue@3.2.29
+  vue3-hooks-plus: 2.1.3_vue@3.2.29
   vuex: 4.0.2_vue@3.2.29
 
 devDependencies:
@@ -6466,8 +6466,8 @@ packages:
       '@vue/shared': 3.2.29
     dev: false
 
-  /vue3-hooks-plus/2.1.1_vue@3.2.29:
-    resolution: {integrity: sha512-v27hAC2/wGIeVItIf4WEQaHpcD1p8C9RTMZLaUOn0hd9SZMABcK1Q7bZva+pCpR1FVnXlV4f6b9YI1p58tMikw==}
+  /vue3-hooks-plus/2.1.3_vue@3.2.29:
+    resolution: {integrity: sha512-ssimFMBdwF7zbXrD8a2yVs+SYGx51JixFb7l19hkQyhJgrvtWVTzU4M3Ge4cWAHWyOn0oS5QI3QG8PcAvipqkA==}
     peerDependencies:
       vue: ^3.2.25
     dependencies:
