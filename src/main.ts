@@ -1,17 +1,17 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import { setupGlobDirectives } from './directives';
-import { routers } from './routers';
-import store from './store';
+import { createApp } from 'vue'
+import App from './App.vue'
+import { setupGlobDirectives } from './directives'
+import { routers } from './routers'
+import store from './store'
 
-import './styles/tailwindcss.css';
+import './styles/tailwindcss.css'
 
-const app = createApp(App);
+const app = createApp(App)
 
-app.use(routers);
-app.use(store);
+app.use(routers)
+app.use(store)
 
-setupGlobDirectives(app);
+setupGlobDirectives(app)
 
 // 挂载应用
-app.mount('#app');
+app.mount('#app')

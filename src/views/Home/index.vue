@@ -11,20 +11,19 @@
 <script lang="ts">
   export default {
     name: 'Home',
-  };
+  }
 </script>
 
 <script lang="ts" setup>
-  import { useHomeStore } from '@/store/modules/home';
-  import { storeToRefs } from 'pinia';
-  import Hearder from './Hearder.vue';
-
-  const title = ref(`Vite-Vue3-TypeScript`);
+  import { useHomeStore } from '@/store/modules/home'
+  import { storeToRefs } from 'pinia'
+  import Hearder from './Hearder.vue'
+  const title = ref(`Vite-Vue3-TypeScript`)
 
   /**
    * 使用vue内置全局环境变量
    */
-  console.log(`${import.meta.env.VITE_APP_ENV}`);
+  console.log(`${import.meta.env.VITE_APP_ENV}`)
 
   /**
    * 发送网络请求
@@ -37,12 +36,12 @@
   /**
    * 使用pinia状态管理
    */
-  const store = useHomeStore();
-  const storeTitle = computed(() => store.getFuncTitle);
+  const store = useHomeStore()
+  const storeTitle = computed(() => store.getFuncTitle)
   // 保持响应式
-  const { count } = storeToRefs(store);
+  const { count } = storeToRefs(store)
 
-  const newCount = computed(() => `state ${count.value}`);
+  const newCount = computed(() => `state ${count.value}`)
   // store.$patch({ count: store.count + 10 });
   // store.incrementPromise();
 </script>

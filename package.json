@@ -13,7 +13,7 @@
     "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
     "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" postcss-html --cache --cache-location node_modules/.cache/stylelint/",
     "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
-    "prepare": "husky install "
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/watermark-dom": "^2.3.1",
