@@ -17,6 +17,8 @@
 <script lang="ts" setup>
   import { useHomeStore } from '@/store/modules/home'
   import { storeToRefs } from 'pinia'
+  import { useRequest } from 'vue-hooks-plus'
+  import { getName } from './services'
   import Hearder from './Hearder.vue'
   const title = ref(`Vite-Vue3-TypeScript`)
 
@@ -25,13 +27,13 @@
    */
   console.log(`${import.meta.env.VITE_APP_ENV}`)
 
-  /**
-   * 发送网络请求
-   */
-  // import { useRequest } from 'vue3-hooks-plus';
-  // import { getName } from './services';
+  // 发送网络请求
+
   // 请求实例
-  // const { data } = useRequest(() => getName(123));
+  const { data } = useRequest(() => getName(123))
+  watchEffect(() => {
+    console.log(data?.value)
+  })
 
   /**
    * 使用pinia状态管理

@@ -1,14 +1,14 @@
-import { defineConfig, loadEnv } from 'vite';
-import { VITE_DROP_CONSOLE, VITE_PORT } from './config/constant';
-import { configManualChunk } from './config/vite/optimizer';
-import { createVitePlugins } from './config/vite/plugins';
+import { defineConfig, loadEnv } from 'vite'
+import { VITE_DROP_CONSOLE, VITE_PORT } from './config/constant'
+import { configManualChunk } from './config/vite/optimizer'
+import { createVitePlugins } from './config/vite/plugins'
 
-import { proxy } from './config/vite/proxy';
+import { proxy } from './config/vite/proxy'
 
 export default ({ command, mode }) => {
-  process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
-  const isBuild = command === 'build';
-  const env = process.env.VITE_APP_ENV ? process.env.VITE_APP_ENV : 'development';
+  process.env = { ...process.env, ...loadEnv(mode, process.cwd()) }
+  const isBuild = command === 'build'
+  const env = process.env.VITE_APP_ENV ? process.env.VITE_APP_ENV : 'development'
   return defineConfig({
     plugins: createVitePlugins(isBuild),
     resolve: {
@@ -47,5 +47,5 @@ export default ({ command, mode }) => {
       host: '0.0.0.0', // IP配置，支持从IP启动
       proxy: proxy[env],
     },
-  });
-};
+  })
+}
