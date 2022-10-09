@@ -15,6 +15,5 @@ LICENSE
 yarn-error.log
 /public
 **/node_modules/**
-.npmrc
 components.d.ts
 auto-imports.d.ts
