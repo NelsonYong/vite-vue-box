@@ -1,6 +1,6 @@
 /**
  * @name Config
- * @description 项目配置
+ * @description config
  */
 
 // app name
