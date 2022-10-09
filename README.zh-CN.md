@@ -41,7 +41,7 @@ pnpm huskyInstall
 
 - [ ] 在 `LICENSE` 中改变作者名
 - [ ] 在 `App.vue` 中改变标题
-- [ ] 在 `vite.config.ts` 更改主机名
+- [ ] 在 `vite.config.ts` 更改主机名,和适当修改 `config`
 - [ ] 在 `public` 目录下改变 favicon
 - [ ] 移除 `.github` 文件夹中包含资助的信息
 - [ ] 整理 README 并删除路由
