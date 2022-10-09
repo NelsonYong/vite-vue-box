@@ -2,6 +2,11 @@
 
 Out of the box, you can quickly generate the vue3 business framework
 
+<p align='left'>
+<b>English</b> | <a href="https://github.com/NelsonYong/vite-vue-box/blob/master/README.zh-CN.md">简体中文</a>
+<!-- Contributors: Thanks for getting interested, however we DON'T accept new transitions to the README, thanks. -->
+</p>
+
 ## 🌟 Feature
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
@@ -10,6 +15,7 @@ Out of the box, you can quickly generate the vue3 business framework
 - 🎨 [TailwindCSS](https://tailwindcss.com/) - rapidly build modern websites without ever leaving your HTML
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 - 🚀 [Vue-hooks-plus](https://github.com//InhiblabCore/vue-hooks-plus) , farewell to the vueuse,The vue-hooks-plus can satisfy most of your business
+- 💫 <u>Axios</u>，package the complete business request process with the due-hooks-plus/useRequest
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 - 🦾 <u>TypeScript</u>, necessary
 - ☁️ <u>Eslint 、Stylelint 、Commitlint、Husky</u>，normative constraints
@@ -21,8 +27,6 @@ Out of the box, you can quickly generate the vue3 business framework
 [Create a repo from this template on GitHub](https://github.com/NelsonYong/vite-vue-box/generate).
 
 ### Clone to local
-
-If you prefer to do it manually with the cleaner git history
 
 ```bash
 npx degit NelsonYong/vite-vue-box vite-vue-box-template
