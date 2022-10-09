@@ -6,7 +6,7 @@
 <a href="https://github.com/NelsonYong/vite-vue-box/blob/master/README.md">English</a> | <b>简体中文</b>
 </p>
 
-## 🌟 Feature
+## 🌟 特性
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - 就是快！
 - 📦 [组件自动化加载](./src/components)
@@ -41,7 +41,7 @@ pnpm huskyInstall
 
 - [ ] 在 `LICENSE` 中改变作者名
 - [ ] 在 `App.vue` 中改变标题
-- [ ] 在 `vite.config.ts` 更改主机名,和适当修改 `config`
+- [ ] 在 `vite.config.ts` 更改主机名,和适当修改
 - [ ] 在 `public` 目录下改变 favicon
 - [ ] 移除 `.github` 文件夹中包含资助的信息
 - [ ] 整理 README 并删除路由
