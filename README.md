@@ -4,7 +4,6 @@ Out of the box, you can quickly generate the vue3 business framework
 
 <p align='left'>
 <b>English</b> | <a href="https://github.com/NelsonYong/vite-vue-box/blob/master/README.zh-CN.md">简体中文</a>
-<!-- Contributors: Thanks for getting interested, however we DON'T accept new transitions to the README, thanks. -->
 </p>
 
 ## 🌟 Feature
