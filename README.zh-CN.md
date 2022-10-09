@@ -2,7 +2,7 @@
 
 开箱即用，你可以快速构建出 Vue3 的业务框架
 
-<p align='center'>
+<p align='left'>
 <a href="https://github.com/NelsonYong/vite-vue-box/blob/master/README.md">English</a> | <b>简体中文</b>
 </p>
 
