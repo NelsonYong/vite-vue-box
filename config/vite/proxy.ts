@@ -1,12 +1,12 @@
-import { ProxyOptions } from 'vite';
+import { ProxyOptions } from 'vite'
 
 export const proxy: Record<string, Record<string, ProxyOptions>> = {
   test: {
     '/api-': {
       target: '',
-      changeOrigin: true,
-    },
+      changeOrigin: true
+    }
   },
   development: {},
-  production: {},
-};
+  production: {}
+}

@@ -1,20 +1,12 @@
-import styleImport from 'vite-plugin-style-import';
+import styleImport from 'vite-plugin-style-import'
 
 export function configStyleImportPlugin(isBuild: boolean) {
   if (!isBuild) {
-    return [];
+    return []
   }
   const styleImportPlugin = styleImport({
-    libs: [
-      // {
-      //   libraryName: 'vant',
-      //   esModule: true,
-      //   resolveStyle: (name) => {
-      //     return `vant/lib/${name}/index.less`;
-      //   },
-      // },
-    ],
-  });
+    libs: []
+  })
 
-  return styleImportPlugin;
+  return styleImportPlugin
 }

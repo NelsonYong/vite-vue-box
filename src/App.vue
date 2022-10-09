@@ -11,10 +11,10 @@
 </template>
 
 <style>
-  @import './styles/basic.less';
+@import './styles/basic.less';
 
-  #app {
-    width: 100%;
-    height: 100%;
-  }
+#app {
+  width: 100%;
+  height: 100%;
+}
 </style>
