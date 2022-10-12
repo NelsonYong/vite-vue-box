@@ -13,7 +13,7 @@ Out of the box, you can quickly generate the vue3 business framework
 - 🍍 [State Management via Pinia](https://pinia.vuejs.org/)
 - 🎨 [TailwindCSS](https://tailwindcss.com/) - rapidly build modern websites without ever leaving your HTML
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
-- 🚀 [Vue-hooks-plus](https://github.com//InhiblabCore/vue-hooks-plus) , farewell to the vueuse,The vue-hooks-plus can satisfy most of your business
+- 🚀 [Vue-hooks-plus](https://github.com//InhiblabCore/vue-hooks-plus) - The vue-hooks-plus can satisfy most of your business
 - 💫 <u>Axios</u> - package the complete business request process with the due-hooks-plus/useRequest
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 - 🦾 <u>TypeScript</u>, necessary
