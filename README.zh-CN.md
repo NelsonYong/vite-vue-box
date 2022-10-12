@@ -13,7 +13,7 @@
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 - 🎨 [TailwindCSS](https://tailwindcss.com/) - 无需离开 HTML 即可快速构建现代网站
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
-- 🚀 [Vue-hooks-plus](https://github.com//InhiblabCore/vue-hooks-plus) , 抛弃 vueuse, vue-hooks-plus 能满足你大部分业务
+- 🚀 [Vue-hooks-plus](https://github.com//InhiblabCore/vue-hooks-plus) - vue-hooks-plus 能满足你大部分业务
 - 💫 <u>Axios</u> - 封装了完整的网络请求 搭配 vue-hooks-plus/useRequest，香的一
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 - 🦾 <u>TypeScript</u>, 必须的
