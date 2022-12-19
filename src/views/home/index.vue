@@ -29,9 +29,13 @@ export default {
 <script lang="ts" setup>
 import { useHomeStore } from '@/store/modules/home'
 import { storeToRefs } from 'pinia'
-import { useRequest } from 'vue-hooks-plus'
+
 import { getName } from './services'
 import Hearder from './Hearder.vue'
+import { useRequest } from 'vue-hooks-plus'
+// import type { Plugin } from 'vue-hooks-plus/lib/useRequest/types'
+
+// import type { Plugin } from 'vue-hooks-plus/es/useRequest/types'
 
 /**
  * global
