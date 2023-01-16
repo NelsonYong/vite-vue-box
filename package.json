@@ -23,11 +23,11 @@
     "dayjs": "^1.10.7",
     "less": "^4.1.2",
     "pinia": "^2.0.26",
-    "unplugin-auto-import": "^0.5.3",
+    "unplugin-auto-import": "^0.12.1",
     "vite-plugin-compression": "^0.4.0",
     "vite-plugin-style-import": "^1.4.0",
     "vue": "^3.2.39",
-    "vue-hooks-plus": "^1.5.1",
+    "vue-hooks-plus": "^1.5.2",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
@@ -40,6 +40,7 @@
     "@vitejs/plugin-legacy": "^1.6.4",
     "@vitejs/plugin-vue": "^1.9.3",
     "@vitejs/plugin-vue-jsx": "^1.2.0",
+    "@vue-hooks-plus/resolvers": "^1.0.0",
     "autoprefixer": "^10.4.2",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",

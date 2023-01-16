@@ -29,7 +29,6 @@ export default {
 <script lang="ts" setup>
 import { useHomeStore } from '@/store/modules/home'
 import { storeToRefs } from 'pinia'
-import { useRequest } from 'vue-hooks-plus'
 import { getName } from './services'
 import Hearder from './Hearder.vue'
 
@@ -39,6 +38,7 @@ import Hearder from './Hearder.vue'
 console.log(`${import.meta.env.VITE_APP_ENV}`)
 
 //  mock request
+// auto import vue-hooks-plus
 const { data } = useRequest(() => getName(123))
 watchEffect(() => {
   console.log(data?.value)
