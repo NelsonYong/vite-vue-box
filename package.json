@@ -27,7 +27,7 @@
     "vite-plugin-compression": "^0.4.0",
     "vite-plugin-style-import": "^1.4.0",
     "vue": "^3.2.39",
-    "vue-hooks-plus": "^1.6.0-alpha.5",
+    "vue-hooks-plus": "^1.6.0-alpha.8",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
