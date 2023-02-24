@@ -1,10 +1,6 @@
 import { request } from '@/network/axios'
-import { NameType } from './data'
+import { ListType } from './data'
 
-export async function getName(id: number) {
-  return request<NameType>('request url', {
-    params: {
-      id
-    }
-  })
+export async function getList() {
+  return request<ListType>('api/list')
 }

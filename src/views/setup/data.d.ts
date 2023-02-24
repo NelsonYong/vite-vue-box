@@ -1,4 +1,5 @@
-export type NameType = {
-  name?: string
-  age: number
+export type ListType = {
+  id: number
+  title: string
+  content: string
 }
