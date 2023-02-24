@@ -1,6 +1,8 @@
 # vite-vue-box
 
-开箱即用，你可以快速构建出 Vue3 的业务框架
+开箱即用，你可以快速构建出 Vue3 的业务框架。
+
+[预览地址](https://vite-vue-box.vercel.app)
 
 <p align='left'>
 <a href="https://github.com/NelsonYong/vite-vue-box/blob/master/README.md">English</a> | <b>简体中文</b>
@@ -19,11 +21,11 @@
 - 🦾 <u>TypeScript</u>, 必须的
 - ☁️ <u>Eslint 、Stylelint 、Commitlint、Husky</u>，规范化开发约束
 
-## 现在搞起!
+## 现在搞起
 
 ### GitHub 模版
 
-[使用这个模板创建仓库(https://github.com/NelsonYong/vite-vue-box/generate).
+[使用这个模板创建仓库(<https://github.com/NelsonYong/vite-vue-box/generate>).
 
 ### 克隆到本地
 
