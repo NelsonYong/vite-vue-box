@@ -37,32 +37,78 @@ axiosInstance.interceptors.response.use(
   },
   (error) => {
     if (error?.message?.includes?.('timeout')) {
-      console.log('timeout')
+      console.error('timeout')
     } else {
-      console.log(
-        codeMessage?.[error?.response?.status as keyof typeof codeMessage] ??
-          'error'
+      console.error(
+        codeMessage?.[error?.response?.status as keyof typeof codeMessage]
       )
-      if (error?.response?.status === 403) console.log('403')
+      if (error?.response?.status === 403) console.error('403')
     }
     Promise.reject(error)
   }
 )
 
+const requestObj = {
+  get: <ResponseType = unknown>(
+    url: string,
+    options?: AxiosRequestConfig<unknown>
+  ): Promise<ResponseType> => {
+    return axiosInstance.get(url, options)
+  },
+  delete: <ResponseType = unknown>(
+    url: string,
+    options?: AxiosRequestConfig<unknown>
+  ): Promise<ResponseType> => {
+    return axiosInstance.delete(url, options)
+  },
+  post: <ResponseType = unknown>(
+    url: string,
+    data: any,
+    options?: AxiosRequestConfig<unknown>
+  ): Promise<ResponseType> => {
+    return axiosInstance.post(url, data, options)
+  },
+  put: <ResponseType = unknown>(
+    url: string,
+    data: any,
+    options?: AxiosRequestConfig<unknown>
+  ): Promise<ResponseType> => {
+    return axiosInstance.put(url, data, options)
+  },
+  patch: <ResponseType = unknown>(
+    url: string,
+    data: any,
+    options?: AxiosRequestConfig<unknown>
+  ): Promise<ResponseType> => {
+    return axiosInstance.patch(url, data, options)
+  }
+}
+
 const request = <ResponseType = unknown>(
   url: string,
-  options?: AxiosRequestConfig<unknown>
+  options?: AxiosRequestConfig<unknown> & {
+    method?: 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE'
+  }
 ): Promise<ResponseType> => {
-  return new Promise((resolve, reject) => {
-    axiosInstance({
-      url,
-      ...options
-    })
-      .then((res) => {
-        resolve(res.data.data)
-      })
-      .catch((err) => reject(err))
-  })
+  const method = options?.method ?? 'GET'
+
+  if (method === 'GET') {
+    return requestObj.get<ResponseType>(url, options)
+  }
+  if (method === 'DELETE') {
+    return requestObj.delete<ResponseType>(url, options)
+  }
+  if (method === 'POST') {
+    return requestObj.post<ResponseType>(url, options?.data, options)
+  }
+  if (method === 'PUT') {
+    return requestObj.post<ResponseType>(url, options?.data, options)
+  }
+  if (method === 'PATCH') {
+    return requestObj.patch<ResponseType>(url, options?.data, options)
+  }
+
+  return requestObj.get<ResponseType>(url, options)
 }
 
 export { axiosInstance, request }

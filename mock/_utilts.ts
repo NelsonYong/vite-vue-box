@@ -30,6 +30,7 @@ export enum ContentTypeEnum {
   FORM_DATA = 'multipart/form-data;charset=UTF-8'
 }
 
+// @ts-ignore
 export function resultSuccess<T = Recordable>(
   result: T,
   { message = 'ok' } = {}

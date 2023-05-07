@@ -42,7 +42,7 @@ console.log(`${import.meta.env.VITE_APP_ENV}`)
  * mock request
  * auto import vue-hooks-plus
  */
-const { data } = useRequest(() => getList())
+const { data } = useRequest(() => getList(), [])
 
 watchEffect(() => {
   console.log(data?.value)
