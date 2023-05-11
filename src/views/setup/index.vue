@@ -45,7 +45,7 @@ console.log(`${import.meta.env.VITE_APP_ENV}`)
 const { data } = useRequest(() => getList(), [])
 
 watchEffect(() => {
-  console.log(data?.value)
+  console.log(data.value)
 })
 
 /**
