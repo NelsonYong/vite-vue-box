@@ -39,16 +39,6 @@ import Hearder from './Hearder.vue'
 console.log(`${import.meta.env.VITE_APP_ENV}`)
 
 /**
- * mock request
- * auto import vue-hooks-plus
- */
-const { data } = useRequest(() => getList(), [])
-
-watchEffect(() => {
-  console.log(data.value)
-})
-
-/**
  * pinia store
  */
 const store = useHomeStore()
@@ -60,6 +50,18 @@ const newCount = computed(() => `${count.value}`)
 const stateAdd = () => {
   store.increment()
 }
+
+/**
+ * mock request
+ * auto import vue-hooks-plus
+ */
+const { data } = useRequest(() => getList({ id: count.value }), {
+  refreshDeps: true
+})
+
+watchEffect(() => {
+  console.log(data.value)
+})
 </script>
 
 <style scoped lang="less">
